@@ -4,7 +4,7 @@ app's own map tiles as tiles/z/x/y.png, so the planner's maps need no third-part
 
     python tools/build/s08_site.py      -> tools/work/site/  (then commit it to gh-pages)
 
-Site: https://bigmanhenk.github.io/Infinite_Explorer_Nexus/
+Site: https://henkdegeus.github.io/Infinite_Explorer_Nexus/
 """
 import shutil
 import sqlite3

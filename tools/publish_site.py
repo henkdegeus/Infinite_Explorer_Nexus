@@ -4,7 +4,7 @@
 
 Runs s06 (planner page) and s08 (site folder in tools/work/site), then commits that folder to
 the gh-pages branch and pushes. Works from a fresh clone: the site folder gets its own git repo
-the first time. Site: https://bigmanhenk.github.io/Infinite_Explorer_Nexus/
+the first time. Site: https://henkdegeus.github.io/Infinite_Explorer_Nexus/
 """
 import subprocess
 import sys
@@ -12,7 +12,7 @@ from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
 SITE = TOOLS / "work" / "site"
-REMOTE = "https://github.com/BigmanHenk/Infinite_Explorer_Nexus.git"
+REMOTE = "https://github.com/henkdegeus/Infinite_Explorer_Nexus.git"
 
 
 def run(args, cwd=None):
@@ -27,8 +27,8 @@ def main():
     run([sys.executable, str(TOOLS / "build" / "s08_site.py")])
     if not (SITE / ".git").exists():
         run(["git", "init", "-q", "-b", "gh-pages"], cwd=SITE)
-    run(["git", "config", "user.name", "BigmanHenk"], cwd=SITE)
-    run(["git", "config", "user.email", "232571103+BigmanHenk@users.noreply.github.com"], cwd=SITE)
+    run(["git", "config", "user.name", "henkdegeus"], cwd=SITE)
+    run(["git", "config", "user.email", "232571103+henkdegeus@users.noreply.github.com"], cwd=SITE)
     run(["git", "add", "-A"], cwd=SITE)
     subprocess.run(["git", "commit", "-q", "-m", "Update planner site"], cwd=SITE)
     run(["git", "push", "-q", "-f", REMOTE, "gh-pages"], cwd=SITE)

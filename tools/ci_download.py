@@ -16,7 +16,7 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-REPO = "BigmanHenk/Infinite_Explorer_Nexus"
+REPO = "henkdegeus/Infinite_Explorer_Nexus"
 
 
 def token():

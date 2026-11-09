@@ -3,7 +3,7 @@ can be downloaded from any computer:
 
     python tools/make_release.py [--ipa "C:/Users/<you>/Desktop/Explorer iPhone/Explorer.ipa"]
 
-Page: https://github.com/BigmanHenk/Infinite_Explorer_Nexus/releases/latest
+Page: https://github.com/henkdegeus/Infinite_Explorer_Nexus/releases/latest
 Run tools/ci_download.py first so the .ipa is the newest build.
 """
 import argparse
@@ -15,7 +15,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-REPO = "BigmanHenk/Infinite_Explorer_Nexus"
+REPO = "henkdegeus/Infinite_Explorer_Nexus"
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -63,7 +63,7 @@ def main():
     notes = (f"Latest build ({time.strftime('%Y-%m-%d %H:%M')}, commit {commit}).\n\n"
              "- **Explorer.ipa** - install on the iPhone with Sideloadly (Bundle ID `com.infiniteaperture.explorernexus`).\n"
              "- **Explorer.Planner.html** - the PC planner; open in any browser (maps and photos need internet). "
-             "Always-current online copy: https://bigmanhenk.github.io/Infinite_Explorer_Nexus/\n"
+             "Always-current online copy: https://henkdegeus.github.io/Infinite_Explorer_Nexus/\n"
              "- **LAPTOP_SETUP.md** - how to set up a computer for this project.\n")
     rel = call("GET", f"https://api.github.com/repos/{REPO}/releases/tags/latest", tok)
     if rel is None:

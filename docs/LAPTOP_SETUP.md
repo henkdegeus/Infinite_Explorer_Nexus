@@ -14,7 +14,7 @@ Written for **Claude Code on the new laptop**, which carries out the steps. Step
    folder.
 4. Open the Claude Code panel and paste this message:
 
-   > Clone https://github.com/BigmanHenk/Infinite_Explorer_Nexus into this folder, open it,
+   > Clone https://github.com/henkdegeus/Infinite_Explorer_Nexus into this folder, open it,
    > then read docs/LAPTOP_SETUP.md and set up this laptop for me, step by step. Ask me
    > whenever a step needs me.
 
@@ -48,15 +48,15 @@ git --version; python --version
 
 Set the commit identity used by this public repo (never the owner's Gmail):
 ```powershell
-git config --global user.name "BigmanHenk"
-git config --global user.email "232571103+BigmanHenk@users.noreply.github.com"
+git config --global user.name "henkdegeus"
+git config --global user.email "232571103+henkdegeus@users.noreply.github.com"
 ```
 
 ## Step 2 — Claude: the project
 
 If Step 0 didn't clone it yet:
 ```powershell
-git clone https://github.com/BigmanHenk/Infinite_Explorer_Nexus.git
+git clone https://github.com/henkdegeus/Infinite_Explorer_Nexus.git
 cd Infinite_Explorer_Nexus
 ```
 Python environment:
@@ -72,7 +72,7 @@ python -m pip install -r requirements.txt
 ## Step 3 — 👤 YOU + Claude: GitHub login
 
 Claude makes a harmless commit and pushes it. Git Credential Manager then opens a browser
-window. **👤 YOU sign in to GitHub as BigmanHenk** and approve.
+window. **👤 YOU sign in to GitHub as henkdegeus** and approve.
 
 ```powershell
 git commit --allow-empty -m "Laptop set up"
@@ -141,5 +141,5 @@ what's next.
 |---|---|
 | Change the app | Describe it. Claude edits, commits and pushes; GitHub builds it. |
 | Get the new app on the phone | Claude runs `python tools/ci_download.py`, then **👤 YOU** press Start in Sideloadly. |
-| Update the PC planner page | Claude runs s06, then `tools/publish_site.py`; open https://bigmanhenk.github.io/Infinite_Explorer_Nexus/ |
+| Update the PC planner page | Claude runs s06, then `tools/publish_site.py`; open https://henkdegeus.github.io/Infinite_Explorer_Nexus/ |
 | Plan on the laptop | Open the page above, plan, press **Send to iPhone**, scan the QR code with the phone. |

@@ -1,6 +1,6 @@
 # Infinite Explorer Nexus
 
-**Downloads:** https://github.com/BigmanHenk/Infinite_Explorer_Nexus/releases/latest (iPhone app + PC planner) · **PC planner online:** https://bigmanhenk.github.io/Infinite_Explorer_Nexus/
+**Downloads:** https://github.com/henkdegeus/Infinite_Explorer_Nexus/releases/latest (iPhone app + PC planner) · **PC planner online:** https://henkdegeus.github.io/Infinite_Explorer_Nexus/
 
 An offline iPhone sightseeing guide and week planner for Birchington-on-Sea and the Isle of
 Thanet (home-screen name **Explorer**). Everything works without signal. The only things that

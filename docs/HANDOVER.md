@@ -12,7 +12,7 @@ The full guide with Sideloadly is in `docs/LAPTOP_SETUP.md`; this is the short v
    **VS Code**, and the **Claude Code** extension or CLI.
 2. Get the code:
    ```
-   git clone https://github.com/BigmanHenk/Infinite_Explorer_Nexus.git
+   git clone https://github.com/henkdegeus/Infinite_Explorer_Nexus.git
    cd Infinite_Explorer_Nexus
    python -m venv .venv && .venv\Scripts\activate
    pip install -r requirements.txt
@@ -44,7 +44,7 @@ The full guide with Sideloadly is in `docs/LAPTOP_SETUP.md`; this is the short v
 | Get the IPA | `python tools/ci_download.py`. It waits for the build and saves `Desktop\Explorer iPhone\Explorer.ipa`, or prints the compiler errors. |
 | Rebuild content (DB) | `python tools/build/s04_database.py`. It writes `ios/ExplorerNexus/Content/*.sqlite`. |
 | Publish downloads | `python tools/ci_download.py`, then `python tools/make_release.py`. This updates the GitHub release "latest" (IPA + PC page + setup guide). |
-| Update the PC page | `python tools/build/s06_pc_planner.py` updates `planner/Explorer Planner.html`; `python tools/publish_site.py` publishes it to https://bigmanhenk.github.io/Infinite_Explorer_Nexus/ (needs `tools/work/map.sqlite`). |
+| Update the PC page | `python tools/build/s06_pc_planner.py` updates `planner/Explorer Planner.html`; `python tools/publish_site.py` publishes it to https://henkdegeus.github.io/Infinite_Explorer_Nexus/ (needs `tools/work/map.sqlite`). |
 
 There is **no Mac**. Swift is only compiled on GitHub Actions, so review Swift by eye
 before pushing:
@@ -108,7 +108,7 @@ when new places should get photos.
   facts: CAMRA Good Beer Guide, awards, craft/real ale, hygiene rating.
 - **Research text is in our own words, with `source_urls`.** Unknown facts stay null and are
   never invented. Event dates the organisers haven't confirmed are marked `"expected"`.
-- **Commits** use `BigmanHenk <232571103+BigmanHenk@users.noreply.github.com>`, not the
+- **Commits** use `henkdegeus <232571103+henkdegeus@users.noreply.github.com>`, not the
   owner's Gmail, because the repo is public.
 - **OpenStreetMap and CARTO tile servers refuse pages opened from a file.** The PC page
   therefore uses our own tiles from GitHub Pages.
@@ -160,8 +160,8 @@ when new places should get photos.
 
 ## 8. Downloads for the owner
 
-- **https://github.com/BigmanHenk/Infinite_Explorer_Nexus/releases/latest:** Explorer.ipa,
+- **https://github.com/henkdegeus/Infinite_Explorer_Nexus/releases/latest:** Explorer.ipa,
   Explorer.Planner.html and LAPTOP_SETUP.md. Update it with `python tools/ci_download.py`,
   then `python tools/make_release.py`.
-- **https://bigmanhenk.github.io/Infinite_Explorer_Nexus/:** the PC planner online, always
+- **https://henkdegeus.github.io/Infinite_Explorer_Nexus/:** the PC planner online, always
   current after `tools/publish_site.py`.

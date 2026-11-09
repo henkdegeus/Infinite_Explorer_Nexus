@@ -25,7 +25,7 @@ from PIL import Image
 
 from common import CONTENT, RESEARCH, WORK
 
-UA = "ExplorerNexusBuild/0.1 (https://github.com/BigmanHenk/Infinite_Explorer_Nexus)"
+UA = "ExplorerNexusBuild/0.1 (https://github.com/henkdegeus/Infinite_Explorer_Nexus)"
 CACHE = WORK / "photos"
 OUT = WORK / "photos.json"
 STOP = set("""the a an of and at on in to by for with from road street lane way bay beach park house museum church
